@@ -1,9 +1,0 @@
-[Unit]
-Description=Yakuake startup script
-
-[Service]
-WorkingDirectory=/usr/bin/
-ExecStart=/usr/bin/sh /usr/bin/yak     
- 
-[Install]
-WantedBy=multi-user.target
