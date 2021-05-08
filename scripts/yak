@@ -10,22 +10,23 @@ sleep 2
                                                  
 # rename tabs and optionally open applications on some tabs                                                       
 TERMINAL_ID_0=$(qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.terminalIdsForSessionId 0)
-qdbus org.kde.yakuake /yakuake/tabs setTabTitle 0 "[htop]"
+qdbus org.kde.yakuake /yakuake/tabs setTabTitle 0 "[1] htop"
 qdbus org.kde.yakuake /yakuake/sessions runCommandInTerminal 0 "htop"
 
 qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.addSession
-qdbus org.kde.yakuake /yakuake/tabs setTabTitle 1 "[coding</>]"
-qdbus org.kde.yakuake /yakuake/sessions runCommandInTerminal 1 "vim"
+qdbus org.kde.yakuake /yakuake/tabs setTabTitle 1 "[2] coding</>"
+qdbus org.kde.yakuake /yakuake/sessions runCommandInTerminal 1 "vim ~/Github/"
 
 qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.addSession
-qdbus org.kde.yakuake /yakuake/tabs setTabTitle 2 "[exec</>]"
+qdbus org.kde.yakuake /yakuake/tabs setTabTitle 2 "[3] exec</>"
   
 qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.addSession
-qdbus org.kde.yakuake /yakuake/tabs setTabTitle 3 "[mocp]"
-qdbus org.kde.yakuake /yakuake/sessions runCommandInTerminal 3 "mocp"
-
+qdbus org.kde.yakuake /yakuake/tabs setTabTitle 3 "[4] vifm"
+qdbus org.kde.yakuake /yakuake/sessions runCommandInTerminal 3 "vifm"
 
 qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.addSession
-qdbus org.kde.yakuake /yakuake/tabs setTabTitle 4 "[ranger]"
-qdbus org.kde.yakuake /yakuake/sessions runCommandInTerminal 4 "ranger"
+qdbus org.kde.yakuake /yakuake/tabs setTabTitle 4 "[5] mocp"
+qdbus org.kde.yakuake /yakuake/sessions runCommandInTerminal 4 "mocp"
 
+qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.addSession
+qdbus org.kde.yakuake /yakuake/tabs setTabTitle 5 "[6] default"
