@@ -15,10 +15,11 @@ qdbus org.kde.yakuake /yakuake/sessions runCommandInTerminal 0 "htop"
 
 qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.addSession
 qdbus org.kde.yakuake /yakuake/tabs setTabTitle 1 "[2] coding</>"
-qdbus org.kde.yakuake /yakuake/sessions runCommandInTerminal 1 "vim ~/Github/"
+qdbus org.kde.yakuake /yakuake/sessions runCommandInTerminal 1 "cd ~/Github/ict2010/javaProgramming/fundamentals"
 
 qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.addSession
 qdbus org.kde.yakuake /yakuake/tabs setTabTitle 2 "[3] exec</>"
+qdbus org.kde.yakuake /yakuake/sessions runCommandInTerminal 2 "cd ~/Github/ict2010/javaProgramming/fundamentals"
   
 qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.addSession
 qdbus org.kde.yakuake /yakuake/tabs setTabTitle 3 "[4] vifm"
