@@ -6,7 +6,7 @@ ffmpeg \
 -filter_complex amix=inputs=3 \
 -acodec libvorbis \
 -f x11grab -r 30 -s 1366x768 -i :0.0+0,0 \
--vcodec libx264 -preset ultrafast -crf 13 \
+-vcodec libx264 -preset ultrafast -crf 15 \
 -threads 4 \
 /home/patrick/Videos/vlogs.mkv
 
